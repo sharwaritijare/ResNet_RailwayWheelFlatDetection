@@ -1,3 +1,5 @@
+#minimum data
+
 import torch
 import torch.nn as nn
 from torchvision import models, transforms, datasets
@@ -126,4 +128,4 @@ def evaluate_model(model, test_loader):
     print(classification_report(all_labels, all_preds, target_names=test_dataset.classes))
     print(f"Accuracy: {accuracy_score(all_labels, all_preds):.4f}")
 
-evaluate_model(resnet,test_loader)
+evaluate_model(resnet, test_loader)
